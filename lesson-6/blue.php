@@ -11,17 +11,25 @@
 	<body id="section4">
 		<!-- Page-level header -->
 		<header>
+			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 			<!-- Global site navigation -->
+			<nav>
+				<ul>
+					<li><a href="index.php" title="Go to home page">Home</a></li> <!--title attributes are entirely optional-->
+					<li><a href="red.php" title="All about red blocks">Red blocks</a></li>
+					<li>Blue blocks</li>
+					<li><a href="yellow.php" title="All about yellow blocks">Yellow blocks</a></li>
+				</ul>
+			</nav>
 
 		</header>
 		<!-- Page-level main content -->
 		<main>
 			<section>
 				<h3>Blue Blocks</h3>
-				<p>Amet mattis vulputate enim nulla aliquet. Faucibus turpis in eu mi bibendum neque egestas. Purus sit amet volutpat consequat mauris. Consequat semper viverra nam libero justo laoreet. Purus in mollis nunc sed id semper risus in hendrerit. Nunc lobortis mattis aliquam faucibus purus. Lobortis scelerisque fermentum dui faucibus in.</p>
-				<p>Sit amet cursus sit amet dictum sit. Convallis a cras semper auctor neque vitae. Massa tincidunt dui ut ornare lectus sit. Consectetur adipiscing elit duis tristique. At consectetur lorem donec massa. Etiam sit amet nisl purus. Placerat vestibulum lectus mauris ultrices. Pellentesque dignissim enim sit amet.</p>
+				<p>Dabba</p>
 			</section>
 			<aside>
 				<figure>

@@ -14,14 +14,14 @@
  			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-<!-- STEP 3: Build a NAV element for global Web site navigation -->
-
-<!-- STEP 4a: Let's build a list of hyperlinks inside the above NAV element linking this page to other pages in the site - create an unordered list element (UL) -->
-<!-- STEP 4b: Create a list item inside the UL (LI) -->
-<!-- STEP 4c: Insert an A element inside the LI, and add an href that points to the HTML page 'red.php' - include also some text for the hyperlink -->
-<!-- STEP 4d: Add an appropriate title attribute value for the A element, upload the changed page and try it out in a browser - proceed next to open up red.php in your code editor for STEP 5 -->
-<!-- STEP 6: Build a link on this page to index.php (it might seem silly), so that the navigation is consistent from page-to-page - this is very important when building global navigation for Web apps from a usability perspective -->
-<!-- STEP 7: Include navigation links for the pages blue.php and yellow.php - make sure all NAV elements on all pages are the same - upload your files and test your work -->
+			<nav>
+				<ul>
+					<li>Home</li> <!--title attributes are entirely optional-->
+					<li><a href="red.php" title="All about red blocks">Red blocks</a></li>
+					<li><a href="blue.php" title="All about blue blocks">Blue blocks</a></li>
+					<li><a href="yellow.php" title="All about yellow blocks">Yellow blocks</a></li>
+				</ul>
+			</nav>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -58,14 +58,8 @@
 				</form>
 				<figure>
 					<img src="images/mini-figure.png" width="176" height="285" alt="Mini figure">
-					<figcaption><a href="https://www.lego.com/">LEGO®</a> mini figure by Vanja (Public Domain)</figcaption> <!--href is hypertext reference-->
+					<figcaption><a href="https://www.lego.com/" rel="external" title="Go to the official LEGO website">LEGO®</a> mini figure by Vanja (Public Domain)</figcaption> <!--href is hypertext reference-->
 					<!-- Mini figure by Vanja (Public Domain) https://openclipart.org/detail/224315/clip-is-a-brick-minifig-4 -->
-<!-- STEP 1b: Add an href attribute with the value set to the URL, "https://www.lego.com/" - this is an absolute URL -->
-<!-- STEP 1c: Since the link is pointing to somewhere other than this Web site, it is an external URL - as such, add rel="external" to the above A element start tag -->
-<!-- STEP 1d: To add additional accessibility, add a useful title attribute as well with a short phrase describing the purpose of the hyperlink -->
-<!-- STEP 2a: Upload this entire folder of files to a Web server and browse to the page in a browser -->
-<!-- STEP 2b: How does the hyperlink text appear differently than the rest of the page? Click on the link, then click on the 'Back' button on your browser - how does the same link appear now? -->
-<!-- STEP 2c: Look at your browsing history for this particular link - then clear your history and reload the page - notice how the link is restored - this is wayfinding -->
 				</figure>
 				<h3>Did You Know…?</h3>
 				<p>One of the most important components of effective life-long learning is <em>play</em>. Learning a new skill (like Web development) should include a certain amount of play. Renowned children’s programming entertainer Mr. Rogers certainly knew about the value that play represented:</p>
@@ -78,11 +72,10 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-<!-- STEP 8a: Create a NAV element in the FOOTER for the legal stuff -->
-
-<!-- STEP 8b: Build a link to the page 'Privacy Policy' - note that the href will need to be a relative path that points from this page, down into the 'about' folder -->
-<!-- STEP 8c: Construct a second link that takes the visitor to the element with the id="personal-information" on the very same page, by appending the id value to the URL with a hash symbol (#personal-information) - this is called page-level navigation -->
-<!-- STEP 8d: Try it in your browser, then proceed to about/privacy-policy.php in your code editor for the next step -->
+			<nav>
+				<a href="about/privacy-policy.php">Privacy Policy</a>
+				<a href="about/privacy-policy.php#personal-information">Use of Personal Information</a> <!--navigates to the header-->
+			</nav>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>

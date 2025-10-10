@@ -17,9 +17,10 @@
 			<!-- Global site navigation -->
 			<nav>
 				<ul>
-<!-- STEP 5a: We are now marooned on this page with no way back to the home page except the 'Back' button - build an LI and an A element above pointing back to the index.php page -->
-
-<!-- STEP 5b: Upload this changed file, and try it in the browser - then go back to index.php for STEP 6 -->
+					<li><a href="index.php" title="Go to home page">Home</a></li> <!--title attributes are entirely optional-->
+					<li>Red blocks</li>
+					<li><a href="blue.php" title="All about blue blocks">Blue blocks</a></li>
+					<li><a href="yellow.php" title="All about yellow blocks">Yellow blocks</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -27,8 +28,7 @@
 		<main>
 			<section>
 				<h3>Red Blocks</h3>
-				<p>Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Ut enim blandit volutpat maecenas. Mauris commodo quis imperdiet massa. Sit amet dictum sit amet justo donec enim diam vulputate. Imperdiet nulla malesuada pellentesque elit.</p>
-				<p>Et malesuada fames ac turpis egestas integer eget aliquet nibh. Commodo quis imperdiet massa tincidunt nunc pulvinar. Odio pellentesque diam volutpat commodo sed. Enim eu turpis egestas pretium aenean. Faucibus purus in massa tempor nec. Duis tristique sollicitudin nibh sit amet. Tortor condimentum lacinia quis vel eros donec ac.</p>
+				<p>Yabba</p>
 			</section>
 			<aside>
 				<figure>
