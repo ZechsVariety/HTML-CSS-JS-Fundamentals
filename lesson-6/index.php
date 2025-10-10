@@ -14,14 +14,12 @@
  			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-			<nav>
-				<ul>
-					<li>Home</li> <!--title attributes are entirely optional-->
-					<li><a href="red.php" title="All about red blocks">Red blocks</a></li>
-					<li><a href="blue.php" title="All about blue blocks">Blue blocks</a></li>
-					<li><a href="yellow.php" title="All about yellow blocks">Yellow blocks</a></li>
-				</ul>
-			</nav>
+			<?php
+				//grab site navigation
+				include("includes/nav.php");
+
+				//the php is converted to html--if you inspect element the website, you see this part is substituted
+			?>
 		</header>
 		<!-- Page-level main content -->
 		<main>

@@ -15,14 +15,10 @@
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 			<!-- Global site navigation -->
-			<nav>
-				<ul>
-					<li><a href="../index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="../red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="../blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="../yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-				</ul>
-			</nav>
+			<?php
+				//grab site navigation
+				include("../includes/nav.php");
+			?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
