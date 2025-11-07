@@ -23,27 +23,27 @@
                     <legend>Customize Your Pizza!</legend>
                     <div>
                         <h4>Pizza Count</h4>
-                        <input type="range" id="pizzaCount" min="1" max="20" value="1" oninput="this.nextElementSibling.value = this.value" /> <!--oninput happens when you change the slider value. Quick javascript thingy that changes the next output field to the slider's value-->
+                        <input type="range" name="pizzaCount" id="pizzaCount" min="1" max="20" value="1" oninput="this.nextElementSibling.value = this.value" /> <!--oninput happens when you change the slider value. Quick javascript thingy that changes the next output field to the slider's value-->
                         <output for="pizzaCount">1</output> <!--thank you Rahul R. for the code I used to display the slider's value without crazy javascript stuff: https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
                         <label for="pizzaCount">pizza(s)</label>
                     </div>
                     <div>
                         <h4>Size</h4>
-                        <input type="radio" name="size" id="smallSize" value="smallSize" />
+                        <input type="radio" name="size" id="smallSize" value="small" />
                         <label for="smallSize">Small</label>
                         
-                        <input type="radio" name="size" id="mediumSize" value="mediumSize" checked/> <!--checked makes this the default-->
+                        <input type="radio" name="size" id="mediumSize" value="medium" checked/> <!--checked makes this the default-->
                         <label for="mediumSize">Medium</label>
                         
-                        <input type="radio" name="size" id="largeSize" value="largeSize" />
+                        <input type="radio" name="size" id="largeSize" value="large" />
                         <label for="largeSize">Large</label>
 
-                        <input type="radio" name="size" id="partySize" value="partySize" />
+                        <input type="radio" name="size" id="partySize" value="party" />
                         <label for="partySize">PARTY!!</label>
                     </div>
                     <div>
                         <h4>Slices</h4>
-                        <input type="range" id="sliceCount" min="1" max="24" value="6" oninput="this.nextElementSibling.value = this.value"/>
+                        <input type="range" name="sliceCount" id="sliceCount" min="1" max="24" value="6" oninput="this.nextElementSibling.value = this.value"/>
                         <output for="sliceCount">6</output>
                         <label for="sliceCount">slice(s)</label>
                     </div>

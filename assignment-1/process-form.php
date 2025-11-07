@@ -18,7 +18,7 @@
 				$pizzaCount = $_GET["pizzaCount"];
 				$size = $_GET["size"];
 
-				$toppings = $_GET["toppings[]"];
+				$toppings = $_GET["toppings"]; //doesn't need square brackets
 
 				echo('<p>Thank you, '.$name.'! Your '.$pizzaCount.' '.$size.' pizza(s) are in the oven! (not really, we microwave)</p>'); //echo builds html stuff
 
