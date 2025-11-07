@@ -20,7 +20,7 @@
 
 				$toppings = $_GET["toppings[]"];
 
-				echo('<p>Thank you, '.$name'! Your '.$pizzaCount' '.$size' pizza(s) are in the oven! (not really, we microwave)</p>'); //echo builds html stuff
+				echo('<p>Thank you, '.$name.'! Your '.$pizzaCount.' '.$size.' pizza(s) are in the oven! (not really, we microwave)</p>'); //echo builds html stuff
 
 				echo('<p>Here are the toppings you picked to prove that we are good at making websites:</p>
 				<ul>');
