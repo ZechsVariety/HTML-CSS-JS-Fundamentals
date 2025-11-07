@@ -13,6 +13,7 @@
 		<header>
 			<h1>AWESOME PIZZA!!!</h1>
 			<h3>Where pizza is made in an awesome way</h3>
+            <img src="images/pizzaInWoodStove.webp" alt="pizza in wood stove" width="500" height="350" />
 		</header>
 
         <main>
@@ -67,6 +68,50 @@
                         <svg for="triangleShape" height="80" width="80">
                             <polygon points="40,10 5,70 75,70" fill="yellow" stroke="brown" stroke-width="7" /> <!--rounding the corners of a polygon is too intense for me-->
                         </svg>
+                    </div>
+                    <div>
+                        <h4>Toppings</h4>
+
+                        <input type="checkbox" name="toppings[]" id="toppings1" value="cheese" checked/> <!--toppings is an array-->
+                        <label for="toppings1">Cheese</label>
+
+                        <input type="checkbox" name="toppings[]" id="toppings2" value="pepperoni" />
+                        <label for="toppings2">Pepperoni</label>
+
+                        <input type="checkbox" name="toppings[]" id="toppings3" value="potatoes" />
+                        <label for="toppings3">Potatoes</label>   
+
+                        <input type="checkbox" name="toppings[]" id="toppings4" value="spinach" />
+                        <label for="toppings4">Spinach</label>
+                        
+                        <input type="checkbox" name="toppings[]" id="toppings5" value="pickles" />
+                        <label for="toppings5">Pickles</label>
+
+                        <input type="checkbox" name="toppings[]" id="toppings6" value="egg" />
+                        <label for="toppings6">Egg</label>
+
+                        <input type="checkbox" name="toppings[]" id="toppings7" value="carrots" />
+                        <label for="toppings7">Carrots</label>
+
+                        <input type="checkbox" name="toppings[]" id="toppings8" value="sausage" />
+                        <label for="toppings8">Sausage</label>
+                    </div>
+                    <div>
+                        <h4>Crust Type</h4>
+
+                        <select name="crust" id="crust">
+                            <optgroup label="Crusts">
+                                <option value="Regular">Regular</option>
+                                <option value="Thin">Thin Crust</option>
+                                <option value="Deep">Deep Dish</option>
+                                <option value="GlutenFree">Gluten Free</option>
+                            </optgroup>
+                            <optgroup label="Special">
+                                <option value="Cheese">Cheese Injection</option>
+                                <option value="Lettuce">Lettuce Crust</option>
+                                <option value="Evil">Evil Crust</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </fieldset>
 

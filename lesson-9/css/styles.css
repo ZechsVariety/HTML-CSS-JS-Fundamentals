@@ -45,6 +45,9 @@ h2 {
 
 }
 /* STEP 5: Line height for paragraphs (leading) - set line-height on the MAIN P elements - this can be a unitless setting (a factor) */
+main p {
+	line-height: 1.5;
+}
 
 /* STEP 11: Change the indenting of the paragraphs */
 main p {
@@ -52,6 +55,6 @@ main p {
 }
 /* STEP 6: Align text left, right, center and justify for paragraphs */
 main p {
-
+	text-align: left;
 }
 /* STEP 7: Modify bold and italics, by applying to strong and em - swap them around */
