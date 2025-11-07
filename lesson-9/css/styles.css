@@ -55,6 +55,10 @@ main p {
 }
 /* STEP 6: Align text left, right, center and justify for paragraphs */
 main p {
-	text-align: left;
+	text-align: justify;
 }
 /* STEP 7: Modify bold and italics, by applying to strong and em - swap them around */
+em {
+	font-style: oblique; /*more subtle italics for SOME typfaces*/
+	font-weight: bold;
+}
