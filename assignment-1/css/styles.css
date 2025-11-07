@@ -1,0 +1,36 @@
+html {
+	background-color: rgb(141, 64, 64);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
+}
+
+h1, h3, footer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 206, 72);
+    text-align: center;
+}
+h4 {
+    font-family: cursive; /*i guess comic sans is the closest thing to cursive lol*/
+    line-height: .5;
+}
+
+div {
+    background-color: rgb(255, 200, 72);
+}
+
+img {
+    /* got css for centering an image from Girish: https://stackoverflow.com/questions/28336888/html-img-align-middle-doesnt-align-an-image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: rgb(224, 168, 39);
+    color: rgb(47, 40, 0);
+}

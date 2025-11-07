@@ -15,7 +15,7 @@
 				//all these 
 
 				$name = $_GET["name"]; //$ is string i think
-				$pizzaCount = $_GET["pizzaCount"];
+				$pizzaCount = $_GET["pizzaCount"]; //i have no idea why the pizza count isn't parsed when you submit the form--it doesnt even show in the php url
 				$size = $_GET["size"];
 
 				$toppings = $_GET["toppings"]; //doesn't need square brackets
@@ -32,7 +32,7 @@
 			?>
 		</main>
         <footer>
-           	<p><small>© AWESOME PIZZA!!! You filled out this form so you consented to recieving pizza.</small></p>
+           	<p><small>© AWESOME PIZZA!!! You filled out this form so you consented to recieving pizza. Zecheriah Ferguson</small></p>
         </footer>
 	</body>
 </html>
