@@ -19,11 +19,54 @@
             <h2>Pizza Order</h2>
             <form id="pizzaOrder" action="process-form.php" method="get"> <!--action is where the stuff is submitted-->
                 <fieldset>
-                    <legend>Customize Your Pizza</legend>
+                    <legend>Customize Your Pizza!</legend>
                     <div>
+                        <h4>Size</h4>
+                        <input type="radio" name="size" id="smallSize" value="smallSize" />
+                        <label for="smallSize">Small</label>
+                        
+                        <input type="radio" name="size" id="mediumSize" value="mediumSize" checked/> <!--checked makes this the default-->
+                        <label for="mediumSize">Medium</label>
+                        
+                        <input type="radio" name="size" id="largeSize" value="largeSize" />
+                        <label for="largeSize">Large</label>
+
+                        <input type="radio" name="size" id="partySize" value="partySize" />
+                        <label for="partySize">PARTY!!</label>
+                    </div>
+                    <div>
+                        <h4>Pizza Count</h4>
                         <input type="range" id="pizzaCount" min="1" max="20" oninput="this.nextElementSibling.value = this.value" /> <!--oninput happens when you change the slider value. Quick javascript thingy that changes the next output field to the slider's value-->
                         <output for="pizzaCount">#</output> <!--thank you Rahul R. for the code I used to display the slider's value without crazy javascript stuff: https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
                         <label for="pizzaCount">pizza(s)</label>
+                    </div>
+                    <div>
+                        <h4>Slices</h4>
+                        <input type="range" id="sliceCount" min="1" max="24" oninput="this.nextElementSibling.value = this.value"/>
+                        <output for="sliceCount">#</output>
+                        <label for="sliceCount">slice(s)</label>
+                    </div>
+                    <div>
+                        <h4>Shape</h4>
+                        <!--I made them look like pizzas :D-->
+
+                        <!--https://www.w3schools.com/graphics/svg_circle.asp-->
+                        <input type="radio" name="shape" id="circleShape" value="circleShape" title="Circle" alt="Circle" checked> <!--alt should show if the svg doesn't work-->
+                        <svg for="circleShape" height="80" width="80"> <!--not sure how to make the svg clickable (for doesn't work)-->
+                            <circle r="35" cx="40" cy="40" fill="yellow" stroke="brown" stroke-width="7" />
+                        </svg>
+
+                        <!--https://www.w3schools.com/graphics/svg_rect.asp-->
+                        <input type="radio" name="shape" id="squareShape" value="squareShape" title="Square" alt="Square">
+                        <svg for="squareShape" height="80" width="80">
+                            <rect width="65" height="65" x="7" y="7" rx="10" fill="yellow" stroke="brown" stroke-width="7" /> <!--x and y set just by trial and error. rx is corner rounding-->
+                        </svg>
+
+                        <!--https://www.w3schools.com/graphics/svg_polygon.asp-->
+                        <input type="radio" name="shape" id="triangleShape" value="triangleShape" title="Triangle (what is wrong with you)" alt="Triangle">
+                        <svg for="triangleShape" height="80" width="80">
+                            <polygon points="40,10 5,70 75,70" fill="yellow" stroke="brown" stroke-width="7" /> <!--rounding the corners of a polygon is too intense for me-->
+                        </svg>
                     </div>
                 </fieldset>
 
