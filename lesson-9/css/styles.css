@@ -47,7 +47,7 @@ h2 {
 }
 /* STEP 12: Transform the text of the h2 (none | capitalize | uppercase | lowercase | full-width) */
 h2 {
-
+	text-transform: capitalize; /*capitalizes each first letter*/
 }
 /* STEP 5: Line height for paragraphs (leading) - set line-height on the MAIN P elements - this can be a unitless setting (a factor) */
 main p {
