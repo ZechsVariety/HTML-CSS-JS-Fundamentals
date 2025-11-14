@@ -16,43 +16,53 @@ body {
 header {
 	font-size: 1.8rem;
 }
-/* STEP 1: Float the HEADER IMG to the left */
-header img {
-
+	/* DONE 1: Float the HEADER IMG to the left */
+header img
+{
+	float:left;
 }
 
 header a {
 	text-decoration: none;
 }
-/* STEP 2: Set the text-align for both the HEADER H1 and the HEADER H2 to right */
-header h1,
-header h2 {
-
+	/* DONE 2: Set the text-align for both the HEADER H1 and the HEADER H2 to right */
+header h1, header h2
+{
+	text-align: right;
 }
-/* STEP 3a: Reduce the margin-bottom of the HEADER H1 to zero, so that the following H2 sit up a bit closer to the H1 */
-header h1 {
-
+	/* DONE 3a: Reduce the margin-bottom of the HEADER H1 to zero, so that the following H2 sit up a bit closer to the H1 */
+header h1
+{
+	margin-bottom: 0;
 }
-/* STEP 3b: The HEADER H2 has a margin-top by default, set that also to zero to bring it up a bit closer to the H1 */
-header h2 {
-
+	/* DONE 3b: The HEADER H2 has a margin-top by default, set that also to zero to bring it up a bit closer to the H1 */
+header h2
+{
 	text-transform: uppercase;
+
+	margin-top: 0;
 }
 
-/* STEP 4d: There's a bit of padding-left on the UL element that contains the LI elements - set it to zero */
-header nav ul {
-
+	/* DONE 4d: There's a bit of padding-left on the UL element that contains the LI elements - set it to zero */
+header nav ul
+{
+	padding-left: 0;
 }
 
-/* STEP 4a: Apply a 1px dashed red outline around each of the LI elements inside the HEADER NAV so that we can see that each LI is a box (border-width, border-style, and border-color) */
-header nav li {
+	/* DONE 4a: Apply a 1px dashed red outline around each of the LI elements inside the HEADER NAV so that we can see that each LI is a box (border-width, border-style, and border-color) */
+header nav li
+{
+	/* outline: 1px dashed red; */
 
+	display:inline-block;
+
+	margin-right: .5em; /*half of the font size*/
 }
-/* STEP 4b: Set the above LI elements (which default to display: block as we can see in the browser), to display: inline-block so that they line up horizontally across the top of the page */
+	/* DONE 4b: Set the above LI elements (which default to display: block as we can see in the browser), to display: inline-block so that they line up horizontally across the top of the page */
 
-/* STEP 4c: Add a margin-right of 0.5em (half a font-size) to the above rule for the LI elements */
+	/* DONE 4c: Add a margin-right of 0.5em (half a font-size) to the above rule for the LI elements */
 
-/* STEP 4e: Comment out the properties and values for the red border in the above CSS rule - we don't need it any more */
+	/* DONE 4e: Comment out the properties and values for the red border in the above CSS rule - we don't need it any more */
 
 main {
 	font-size: 1.8rem;
@@ -64,30 +74,41 @@ main {
 	flex-direction: row;
 }
 
-/* STEP 5a: Put a 1px dotted hotpink border around MAIN SECTION in the CSS rule below so we can see the box on the screen */
-main section {
-
+	/* DONE 5a: Put a 1px dotted hotpink border around MAIN SECTION in the CSS rule below so we can see the box on the screen */
+main section
+{
 	width: 60%;
 
+	/* border: 1px dotted hotpink; */
+
+	padding: 1em;
 }
-/* STEP 5b: Add 1em of padding on the top, right, bottom, and left of the above MAIN SECTION element - watch the effect in the browser */
+	/* DONE 5b: Add 1em of padding on the top, right, bottom, and left of the above MAIN SECTION element - watch the effect in the browser */
 
 main section time {
 	font-style: italic;
 }
 
-/* STEP 5c: After adding a colored border to the below MAIN ASIDE, go ahead and also add padding to the top, right, and bottom (not the left) */
-main aside {
-
+	/* DONE 5c: After adding a colored border to the below MAIN ASIDE, go ahead and also add padding to the top, right, and bottom (not the left) */
+main aside
+{
 	width: 40%;
 
+	/* border: 10px dotted blue; */
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
 }
-/* STEP 5d: Comment out the borders for the MAIN SECTION and the MAIN ASIDE above - we don't need them anymore */
+	/* DONE 5d: Comment out the borders for the MAIN SECTION and the MAIN ASIDE above - we don't need them anymore */
 
-/* STEP 7a: This is a challenge! Build a selector that targets the images of the colored building blocks ONLY - you will need to use a selector that targets IMG elements inside ASIDE elements that have an 'alt' attribute where the value ends with the word, "block" (you may need to look back at the learning module that covered selectors) */
+	/* DONE 7a: This is a challenge! Build a selector that targets the images of the colored building blocks ONLY - you will need to use a selector that targets IMG elements inside ASIDE elements that have an 'alt' attribute where the value ends with the word, "block" (you may need to look back at the learning module that covered selectors) */
+main aside img[alt*="block"]
+{
+	position: relative;
+	left: -3rem;
+}
 
-
-/* STEP 7b: Position block images a bit more to the left using 'position: relative' - then create a second declartion with the 'left' property equal to -3rem in the above rule you just completed - check how your pages look in the browser, and you are all finished with the lab! */
+	/* DONE 7b: Position block images a bit more to the left using 'position: relative' - then create a second declartion with the 'left' property equal to -3rem in the above rule you just completed - check how your pages look in the browser, and you are all finished with the lab! */
 
 .new-feature {
 	padding-left: 25px;
@@ -123,10 +144,11 @@ blockquote::first-letter {
 	font-size: 2em;
 }
 
-/* STEP 6: The FOOTER is a bit too close to the MAIN - add a margin-top to the FOOTER of 2rem */
+	/* DONE 6: The FOOTER is a bit too close to the MAIN - add a margin-top to the FOOTER of 2rem */
 footer {
-
 	font-size: 1.6rem;
+
+	margin-top: 2rem; /*rem is em but for the root element (ie: html, default of 16px)*/
 }
 
 footer p {
