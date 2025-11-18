@@ -1,0 +1,180 @@
+@charset "UTF-8";
+html {
+	font-family: Tahoma, Verdana, sans-serif;
+	color: #333;
+
+	background-color: grey;
+}
+
+body {
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
+
+	margin-top: 100px;
+
+	background-color: white;
+}
+
+/* Arrange the SECTION elements side-by-side in columns */
+main {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+
+main section {
+	width: 450px; /* sized the same as the image */
+	/* margin-right: 50px; */ /* gap in middle */
+	margin: auto;
+	margin-top: 200px;
+}
+
+h1 {
+	/* margin-bottom: 20%; */
+}
+
+/* fieldset {
+	border: none;
+	display: inline;
+	padding-top: 0;
+	margin-left: 6em;
+	font-size: 20px;
+} */ /* CHANGED TO LABEL */
+
+a {
+	padding-top: 0; /* brings it closer up to the image */
+
+	font-size: 24px;
+
+	/* center */
+	margin-left: auto; /* i originally had it moved 4.5em to the right */
+	margin-right: auto;
+	text-align: center;
+	display: block;
+
+	text-decoration: none;
+	color: black; /* this is overridden by any red cause that's more specific than this */
+}
+a strong {
+	color: red;
+}
+
+img {
+	padding-top: .5em;
+}
+img.down { /* images below the horizontal ribbon are 80px down */
+	margin-top: 80px;
+}
+
+svg.verticle {
+	display: block;
+	margin: 469.6px; /* couldnt figure out how else to center an svg so i just found the margin of the body */
+	margin-top: 0px;
+	position: absolute;
+	/* justify-content: center; */
+	/* text-align: center; */
+}
+
+svg.horizontal { /* same as verticle but margin left and right is 0 instead of top, and top is set differently because it's not dead center */
+	display: block;
+	/* margin: 469.6px; */
+	margin-top: 790px; /*trial and error*/
+	margin-right: 0;
+	margin-left: 0;
+	position: absolute;
+	/* justify-content: center; */
+	/* text-align: center; */
+}
+
+svg.tag {
+	display: block;
+	margin-top: 825px; /*trial and error*/
+	margin-right: 0;
+	margin-left: 410px; /*also trial and error*/
+	position: absolute;
+	transform: rotate(20deg); /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate*/
+	z-index: 0;
+}
+div label {
+	text-align: center;
+
+	display: block;
+	margin-top: 900px; /*trial and error*/
+	margin-right: 0;
+	margin-left: 407px; /*also trial and error*/
+	position: absolute;
+	transform: rotate(20deg); /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate*/
+	z-index: 0;
+
+	font-size: 24px;
+	/* text-align: center; */
+	word-wrap: break-word;
+	max-width: 130px;
+
+	font-family: cursive;
+}
+
+div img {
+	display: block;
+	position: absolute;
+	
+	margin: 700px; /* margin of body + top margin of the sections + offset*/
+	margin-left: 300px; /*just did this manually*/
+
+	/* justify-content: center; */
+
+	z-index: 1; /*displays above the tag */
+}
+
+/* ribbon {
+	margin: inherit;
+	min-width: inherit;
+	max-width: inherit;
+} */
+
+/* text at bottom */
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 200px;
+	margin: auto;
+	font-weight: lighter;
+	/* vertical-align: middle;
+	justify-content: center; */
+	/* margin-top: 100px; */
+}
+h1 strong {
+	font-size: 170px;
+	color: red;
+	font-weight: bolder;
+	letter-spacing: -10px;
+	text-transform: lowercase;
+
+	/* margin-top: 0px; */
+}
+
+h2 {
+	font-size: 50px;
+	margin: auto;
+}
+
+h3 {
+	font-size: 35px;
+	margin: auto;
+}
+
+h4 {
+	font-size: 25px;
+	margin: auto;
+}
+
+h5 {
+	font-size: 20px;
+	margin: auto;
+
+	color: red;
+}
