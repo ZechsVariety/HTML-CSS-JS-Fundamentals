@@ -3,7 +3,7 @@
 /* Set the default box-sizing to border-box, and force all children to inherit */
 html {
     box-sizing: border-box;
-    font: 125%/1.4 Helvetica, Arial, sans-serif;
+    font: 125%/1.4 Helvetica, Arial, sans-serif; /* 125% is font size, 1.4 is line spacing */
 }
 
 *,
@@ -12,68 +12,77 @@ html {
     box-sizing: inherit;
 }
 
-/* STEP 12: Comment out all colored borders, and put a background-color on the below NAV element */
+/* DONE 12: Comment out all colored borders, and put a background-color on the below NAV element */
 nav {
-    
+    background-color: orange;
     
 }
-/* STEP 1: Outline elements to help with styling (NAV, UL, LI, and A) */
+/* DONE 1: Outline elements to help with styling (NAV, UL, LI, and A) */
 nav ul {
-    
-    /* STEP 2: Turn off list markers */
-    
-    /* STEP 3: Zero out padding on all UL elements in the NAV */
-    
-    /* STEP 13a: Put a background-color on the UL elements to hide the text underneath - and a 5px solid black border */
-    
+    /* outline: dotted; */
+    /* DONE 2: Turn off list markers */
+    list-style-type: none;
+    /* DONE 3: Zero out padding on all UL elements in the NAV */
+    padding: 0;
+    /* DONE 13a: Put a background-color on the UL elements to hide the text underneath - and a 5px solid black border */
+    background-color: white;
+    border: 5px solid;
 }
 nav li {
     
-    /* STEP 4: Set the 1st-level LI element to render horizontally */
-    
-    /* STEP 6: Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
-    
+    /* DONE 4: Set the 1st-level LI element to render horizontally */
+    display: inline-block;
+    /* DONE 6: Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
+    position: relative; /* idk what this does :( */
 }
 nav li ul {
-    /* STEP 7: Set position of 2nd-level lists to 'absolute' */
-    
-    /* STEP 8: Hide the 2nd-level lists */
-    
-    /* STEP 11: Set a consistent width on the 2nd-level UL (15em or so) */
-    
+    /* DONE 7: Set position of 2nd-level lists to 'absolute' */
+    position: absolute;
+    /* DONE 8: Hide the 2nd-level lists */
+    left: -9999px;
+    /* DONE 11: Set a consistent width on the 2nd-level UL (15em or so) */
+    width: 7rem; /*make the boxes consistently sized*/
     /* STEP 15: Add a top colored border to the 2nd-level UL to make it look like it is part of the navigation bar */
-    border-top: 5px solid darkorange;
-}
-/* STEP 5: Arrange the 2nd-level list items vertically again */
-nav li li {
     
+}
+/* DONE 5: Arrange the 2nd-level list items vertically again */
+nav li li {
+    display: block;
 }
 nav li a {
-    
-    /* STEP 10: Set anchors to function as full-width clickable bars with display: block */
-    
+    /* background-color: lightblue; */
+    /* DONE 10: Set anchors to function as full-width clickable bars with display: block */
+    display: block; /*makes it far nicer*/
 }
-/* STEP 9: Show the 2nd-level list (UL) when the parent LI is moused over (:hover) or it is in focus (:focus-within) - you will need to build a grouped selector */
+/* DONE 9: Show the 2nd-level list (UL) when the parent LI is moused over (:hover) or it is in focus (:focus-within) - you will need to build a grouped selector */
+nav li:hover ul, /*this is so cool*/
+nav li:focus-within { /*focus on list items like when you tab and stuff*/
+    left: 0px;
+}
 
 
-/* STEP 14: Style the hyperlinks using pseudoclasses - :link, :visited, :focus, :hover, :active (LVFHA) */
+/* DONE 14: Style the hyperlinks using pseudoclasses - :link, :visited, :focus, :hover, :active (LVFHA) */
 nav a {
-    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: .25em;
 }
 nav a:link {
-    
+    background-color: white;
 }
-nav a:visited {
-    
+nav a:visited { /* this dont work and i dont know why */
+    color: purple;
 }
 nav a:focus {
-    
+    background-color: lightgray;
 }
 nav a:hover {
-    
+    background-color: lightgray;
 }
 nav a:active {
-    
+    background-color: black;
+    color: white;
 }
 
 
