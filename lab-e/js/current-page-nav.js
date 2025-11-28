@@ -1,9 +1,9 @@
 // DONE C: Get the current URL for the page
 const pageURL = window.location.href;
-console.log(pageURL);
+//console.log(pageURL);
 // DONE D: Grab all the top-level <a> elements inside the <nav> element at the top of the page (inside the <header> element)
 const navLinks = document.querySelectorAll("header nav > ul > li > a");
-console.log(navLinks);
+//console.log(navLinks);
 // DONE E: Create a place to store the href value for each <a> element
 let linkURL;
 // DONE F: For each <a> element in the NodeList navLinks, compare the href property with the URL for the current page
@@ -11,7 +11,7 @@ navLinks.forEach((element) => //for each element, perform the following (after f
     {
     // DONE G: Grab the href property of each <a> (element)
     linkURL = element.href;
-    console.log(linkURL);
+    //console.log(linkURL);
     // DONE H: Check for a match with the current page
     if(linkURL == pageURL)
     {
