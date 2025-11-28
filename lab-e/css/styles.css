@@ -93,16 +93,16 @@ header nav a:active {
 	color: red;
 }
 
-/* STEP A: Add a background gradient to provide a shadow effect for just the top-level links */
+/* DONE A: Add a background gradient to provide a shadow effect for just the top-level links */
 header nav > ul > li > a {
-	background: linear-gradient(to bottom, lightgrey 80%, grey 100%);
+	background: linear-gradient(to bottom, lightgrey 80%, grey 100%); /* this was already here */
 }
 
-/* STEP B: For the current page (we will add class="current" with JavaScript later), remove the background gradient, and bold the font - then proceed to 'js/current-page-nav.js' for the next steps */
+/* DONE B: For the current page (we will add class="current" with JavaScript later), remove the background gradient, and bold the font - then proceed to 'js/current-page-nav.js' for the next steps */
 header nav a.current,
 header nav > ul > li > a:has(+ ul a.current) {
 	background: white;
-	font-weight: bold;
+	font-weight: bold; /*also already done*/
 }
 
 main {
