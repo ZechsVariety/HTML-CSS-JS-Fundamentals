@@ -1,0 +1,40 @@
+/*NOTE: i wanted to add normalize.css from lesson 13 but i dont think that's allowed*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit; /*everything inherits border box box sizing (ie: 50% will be 50% of the box rather than the content*/
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /*i wanted it to look like it was typed on a typewriter*/
+    background-image: url("../images/PaperTexture.jpg");
+}
+
+header {
+    text-align: center; /*the navigation menu looks aful but itll look better soon*/
+    background-color: rgba(60, 47, 19, 0.352);
+    background-image: linear-gradient();
+    color: rgb(56, 52, 24)
+}
+
+main {
+    /*turn stuff within main into columns*/
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+    /*column sizing*/
+    width: auto; /*auto width automatically sets the widths so that the sections' heights are more similar. so, a column with more text still looks nice next to one with less.*/
+    margin: 0 auto; /*brings it to the middle*/
+    padding: 2.5%; /*space between the columns*/
+
+    background-color: rgb(198, 228, 255);
+}
+
+/* TODO: customize all h1, h2, h3, p, whatever elements to not be the defaults! */
