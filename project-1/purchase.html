@@ -45,7 +45,7 @@
 				<section>
 					<p>That's a plethora of knowledge for the price of just a couple dozen candy bars!*</p>
 
-					<a href="purchase.html#Purchase">BUY NOW</a> <!--teleports you to the purchase form below-->
+					<a href="purchase.html#purchase">BUY NOW</a> <!--teleports you to the purchase form below-->
 
 					<p><small>*I forgot to adjust for inflation. Seriously, what happened guys?</small></p>
 				</section>
@@ -69,11 +69,15 @@
 						<fieldset>
 							<legend>Write a Review</legend>
 							
-							<label for="name">Name</label>
-							<input type="text" id="name" required />
+							<div>
+								<label for="name">Name</label>
+								<input type="text" id="name" required />
+							</div>
 
-							<label for="review">Your Review</label>
-							<input type="text" id="review" />
+							<div>
+								<label for="review">Your Review</label>
+								<input type="text" id="review" />
+							</div>
 
 							<div>
 								<label for="star">Rating</label>
@@ -94,11 +98,11 @@
 								<label for="5star">★★★★★</label>
 							</div>
 
-							<button type="reset">Reset</button>
-                			<button type="submit">Submit</button>
-
 							<p><small>Please be nice</small></p>
 						</fieldset>
+
+						<button type="reset">Reset</button>
+                		<button type="submit">Submit</button>
 					</form>
 						
 					<h4>Still not convinced? <a href="gravity.html" title="Learn about what gravity is">Learn more about my amazing work</a></h4>
@@ -107,21 +111,25 @@
 
 			<form> <!--another fake form-->
 				<fieldset>
-					<legend id="Purchase">Purchase Form</legend>
-					
-					<h4>Details</h4>
+					<legend id="purchase">Purchase Form</legend>
 
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" required />
+					<div>
+						<h4>Details</h4>
 
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" required />
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" required />
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" required />
+					</div>
 
 					<div>
 						<h4>Shipping</h4>
 
-						<label for="address">Shipping Address</label>
-						<input type="text" id="address" required />
+						<div>
+							<label for="address">Shipping Address</label>
+							<input type="text" id="address" required />
+						</div>
 
 						<label for="shipping">Method</label>
 

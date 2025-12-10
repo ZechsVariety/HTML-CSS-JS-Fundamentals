@@ -11,13 +11,21 @@ html {
 body {
     font-family: 'Courier New', Courier, monospace; /*i wanted it to look like it was typed on a typewriter*/
     background-image: url("../images/PaperTexture.jpg");
+    text-align: center;
+}
+
+p, h5 {
+    text-align: justify;
 }
 
 header {
     text-align: center; /*the navigation menu looks aful but itll look better soon*/
     background-color: rgba(60, 47, 19, 0.352);
     background-image: linear-gradient();
-    color: rgb(56, 52, 24)
+    color: rgb(56, 52, 24);
+
+    width: 80%;
+    margin: 0 auto;
 }
 
 main {
@@ -26,6 +34,9 @@ main {
     flex-direction: row;
 
     background-color: rgb(255, 255, 255);
+
+    width: 90%;
+    margin: 0 auto;
 }
 
 section {
@@ -37,4 +48,71 @@ section {
     background-color: rgb(198, 228, 255);
 }
 
+article {
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+}
+article > section {
+    width: 50%;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    
+    /* justify-content: center; */
+}
+img#apple {
+    position: fixed;
+
+    margin: 0 auto;
+
+    /* padding-bottom: 30em; */
+    /* position the apple */
+    margin-top: 5em;
+    margin-left: 10em;
+
+    z-index: 1; /*ensures it shows above*/
+}
+img#newton {
+    position: absolute;
+
+    /*position him at the bottom*/
+    margin-top: 64em;
+    margin-left: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-flow: column; /*makes the submit and reset buttons cool*/
+
+    /* width: 75%; */
+    margin: 0 auto; /*center*/
+    padding: 2.5%;
+
+    background-color: aliceblue;
+
+    text-align: left;
+}
+form#reviewForm {
+    width: 100%;
+}
+form#purchaseForm {
+    width: 50%
+}
+
+fieldset {
+    display: block; /*makes the div elements within fieldset aligned in columns :D*/
+}
+
 /* TODO: customize all h1, h2, h3, p, whatever elements to not be the defaults! */
+
+
+/* text sizes */
+
+p {
+    font-size: 20px;
+}
