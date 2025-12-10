@@ -45,7 +45,7 @@
 				<section>
 					<p>That's a plethora of knowledge for the price of just a couple dozen candy bars!*</p>
 
-					<a href="purchaseForm.html">BUY NOW</a>
+					<a href="purchase.html#Purchase">BUY NOW</a> <!--teleports you to the purchase form below-->
 
 					<p><small>*I forgot to adjust for inflation. Seriously, what happened guys?</small></p>
 				</section>
@@ -64,10 +64,81 @@
 						<br /><q>This had me splitting my sides all the way through! Just wow, this "Newtonian gravity" thing and its inability to explain the orbit of Mercury is just something else, man. The contrast between its formality and idiocy is spectacularly done; at a glace, I never woulda expected it to be a comedy! (It is a comedy, right?)</q>
 						<br />- Albert Einstein
 					</h5>
+
+					<form> <!--this is a fake form with values that are never parsed, so it has no id or anything. thus, a lot of redundant stuff isnt there-->
+						<fieldset>
+							<legend>Write a Review</legend>
+							
+							<label for="name">Name</label>
+							<input type="text" id="name" required />
+
+							<label for="review">Your Review</label>
+							<input type="text" id="review" />
+
+							<div>
+								<label for="star">Rating</label>
+
+								<input type="radio" name="star" id="1star" required />
+								<label for="1star">★</label>
+
+								<input type="radio" name="star" id="2star" required />
+								<label for="2star">★★</label>
+
+								<input type="radio" name="star" id="3star" required />
+								<label for="3star">★★★</label>
+
+								<input type="radio" name="star" id="4star" required />
+								<label for="4star">★★★★</label>
+
+								<input type="radio" name="star" id="5star" required />
+								<label for="5star">★★★★★</label>
+							</div>
+
+							<button type="reset">Reset</button>
+                			<button type="submit">Submit</button>
+
+							<p><small>Please be nice</small></p>
+						</fieldset>
+					</form>
 						
-						<h4>Still not convinced? <a href="gravity.html" title="Learn about what gravity is">Learn more about my amazing work</a></h4>
+					<h4>Still not convinced? <a href="gravity.html" title="Learn about what gravity is">Learn more about my amazing work</a></h4>
 				</section>
 			</main>
+
+			<form> <!--another fake form-->
+				<fieldset>
+					<legend id="Purchase">Purchase Form</legend>
+					
+					<h4>Details</h4>
+
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" required />
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" required />
+
+					<div>
+						<h4>Shipping</h4>
+
+						<label for="address">Shipping Address</label>
+						<input type="text" id="address" required />
+
+						<label for="shipping">Method</label>
+
+						<input type="radio" name="shipping" id="postal" required />
+						<label for="postal">Postal</label>
+
+						<input type="radio" name="shipping" id="horse" required />
+						<label for="horse">Horse Carriage</label>
+
+						<input type="radio" name="shipping" id="pigeon" required />
+						<label for="pigeon">Mail by Pigeon</label>
+					</div>
+				</fieldset>
+
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+			</form>
 		</div>
 		
 		<footer>
