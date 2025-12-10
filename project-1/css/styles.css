@@ -2,6 +2,8 @@
 
 html {
 	box-sizing: border-box;
+
+    
 }
 
 *, *::before, *::after {
@@ -12,6 +14,10 @@ body {
     font-family: 'Courier New', Courier, monospace; /*i wanted it to look like it was typed on a typewriter*/
     background-image: url("../images/PaperTexture.jpg");
     text-align: center;
+
+    /*ensures the website looks the same regardless of the zoom. this is my screen's width (1536 px)*/
+    max-width: 1536px;
+    min-width: 1536px;
 }
 
 p, h5 {
