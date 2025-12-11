@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Purchase - Isaac Newton's Cool Website</title>
+		<meta name="author" content="Zecheriah" />
+		<meta name="description" content="A satirical website depicting Isaac Newton as a self-obsessed saleman">
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Isaac Newton's Cool Website</h1>
+
+            <nav>
+				<ul>
+					<li><a href="index.html" title="Go to the Home page">Home</a></li>
+
+					<li><a href="gravity.html" title="Learn about what gravity is">What is It?</a></li>
+
+					<li><a href="purchase.html" title="Purchase the amazing papers">Purchase</a></li>
+
+					<li><a href="about.html" title="Learn about me, the amazing author, Isaac Newton">About the Author</a></li>
+
+					<li><a href="support.html" title="Access customer support and author contact">Support</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div>
+			<h3>Support and Contact</h3>
+
+			<main>
+				<section>
+					<p>
+						Feel free to contact me if you have any questions regarding the theory of gravity. Just make sure to bring your copy of the research; I ain't giving out any info for free!
+					</p>
+				</section>
+				<section>
+					<p>Also, if you encounter any spelling errors, please, oh, please reach out to me. I'll get it fixed asap. Even a single spelling error would tranish my name for good! I do not need another "apple incident" to be ridiculed over.</p>
+				</section>
+
+				<section>
+					<form id="contactForm">
+						<fieldset>
+							<legend>Submit a Support Ticket</legend>
+							
+							<div>
+								<label for="name">Name</label>
+								<input type="text" id="name" />
+							</div>
+
+							<div>
+								<label for="email">Email*</label>
+								<input type="email" id="email" required />
+							</div>
+
+							<div>
+								<label>Issue*</label>
+								<select id="issueDropdown" required>
+									<option selected disabled hidden></option> <!--defaults to a blank value that is invalid. thanks to Aurelio for the solution https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element-->
+									<optgroup label="Theory of Gravity">
+										<option>Misprint issues</option>
+										<option>I have criticism</option>
+										<option>I just don't get it</option>
+									</optgroup>
+									<optgroup label="Delivery Issues">
+										<option>My order never arrived</option>
+										<option>My order is late</option>
+										<option>My order is damaged</option>
+										<option>Pigeon ate it</option>
+										<option>They didn't let me pet the horsey</option>
+									</optgroup>
+									<optgroup label="Other">
+										<option>I have feedback</option>
+										<option>I have fanart</option>
+										<option>I just want to say hi</option>
+										<option>Other</option>
+									</optgroup>
+								</select>
+							</div>
+
+							<div>
+								<label for="issue">Describe your Issue*</label>
+								<textarea type="text" id="issue" required cols="40"></textarea>
+							</div>
+						</fieldset>
+
+						<button type="reset">Reset</button>
+                		<button type="submit">Submit</button>
+					</form>
+				</section>
+
+				<section>
+					<h4>CONTACT INFO</h4>
+
+					<ul>
+						<li>
+							Email
+							<ul>
+								<li>
+									<a href="mailto:TheManHimself@NewtonIsCool.com">TheManHimself@NewtonIsCool.com</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Discord
+							<ul>
+								<li>
+									GravityInventor774
+								</li>
+							</ul>
+						</li>
+						<li>
+							YouTube
+							<ul>
+								<li>
+									<a href="https://www.youtube.com/@IsaacNewtonMinecraft">@IsaacNewtonMinecraft</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Roblox
+							<ul>
+								<li>
+									<a href="https://www.roblox.com/users/10121122537/profile">@IsaacNewtonReal2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+		
+		<footer>
+			<p><small>© Isaac Newton (actually Zecheriah Ferguson)</small></p>
+		</footer>
+	</body>
+</html>

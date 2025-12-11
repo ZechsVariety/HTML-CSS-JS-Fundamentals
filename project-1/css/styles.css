@@ -41,6 +41,10 @@ header {
     padding: 1em;
 }
 
+ul {
+    text-align: left;
+}
+
 main {
     /*turn stuff within main into columns*/
     display: flex;
@@ -111,10 +115,13 @@ form {
     text-align: left;
 }
 form#reviewForm {
-    width: 100%;
+    width: 105%
 }
 form#purchaseForm {
     width: 50%
+}
+form#contactForm {
+    width: 105%;
 }
 
 fieldset {
