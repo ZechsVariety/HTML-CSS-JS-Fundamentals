@@ -30,10 +30,9 @@ p, h5 {
 }
 
 header {
-    text-align: center; /*the navigation menu looks aful but itll look better soon*/
+    text-align: center;
     background-color: rgba(60, 47, 19, 0.352);
     background-image: linear-gradient();
-    color: rgb(56, 52, 24);
 
     width: 80%;
     margin: 0 auto;
@@ -128,11 +127,51 @@ fieldset {
     display: block; /*makes the div elements within fieldset aligned in columns :D*/
 }
 
-/* TODO: customize all h1, h2, h3, p, whatever elements to not be the defaults! */
-
-
 /* text sizes */
 
 p {
     font-size: 20px;
+}
+
+/* navigation */
+nav {
+    display: inline-block;
+    position: sticky; /*sticks to the viewport at the top*/
+    top: 5px; /*sticky doesnt do anything without an assigned top value*/
+}
+nav > ul {
+    list-style: none; /*remove the dots*/
+    display: flex;
+}
+nav > ul > li {
+    padding: 2em;
+    background-color: rgba(0, 47, 88, 0.426);
+}
+nav > ul > li > a {
+    background-color: rgb(171, 220, 255);;
+    color: black;
+    
+    padding: 1em;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+nav > ul > li > a#current { /*the current tab for each page is set manually so i dont have to use js*/
+    background-color: rgb(0, 67, 126);
+    color: white;
+}
+
+header > h1 {
+    background-image: url("../images/NewtonBannerThin.png"); /*image source: World History Encyclopedia, cropped by me*/
+
+    margin: auto;
+
+    color: rgb(255, 246, 197);
+    text-shadow: 1px 1px 2px black;
+    font-size: 64px;
+}
+header > h1#large { /*for the home page, i wanted the banner to show more of newton's headshot*/
+    background-image: url("../images/NewtonBanner.png"); /*image source: World History Encyclopedia. also cropped by me*/
+    padding: 2.3em;
 }
