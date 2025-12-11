@@ -3,7 +3,9 @@
 html {
 	box-sizing: border-box;
 
-    
+    /* font-size: 120%; */ /*makes all the text 20% larger*/
+
+    overflow-x: hidden; /*hides horizontal scrollbar*/
 }
 
 *, *::before, *::after {
@@ -16,12 +18,14 @@ body {
     text-align: center;
 
     /*ensures the website looks the same regardless of the zoom. this is my screen's width (1536 px)*/
-    max-width: 1536px;
-    min-width: 1536px;
+    max-width: 1521px;
+    min-width: 1521px;
 }
 
 p, h5 {
     text-align: justify;
+    /* text-indent: 2em each-line; */ /*eachline doesnt work in chrome :(*/
+    /* line-height: 1.5em; */
 }
 
 header {
@@ -32,6 +36,8 @@ header {
 
     width: 80%;
     margin: 0 auto;
+
+    padding: 1em;
 }
 
 main {
@@ -78,7 +84,7 @@ img#apple {
 
     /* padding-bottom: 30em; */
     /* position the apple */
-    margin-top: 5em;
+    margin-top: 4em;
     margin-left: 10em;
 
     z-index: 1; /*ensures it shows above*/
@@ -87,7 +93,7 @@ img#newton {
     position: absolute;
 
     /*position him at the bottom*/
-    margin-top: 64em;
+    margin-top: 71.5em;
     margin-left: 2.5em;
 }
 
