@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function(){ //waits until the page
     //alerts for when you click submit
 
     contactForm.addEventListener("submit", function(event){
-            alert("Your support ticket has been recieved. I will email you shortly!");
+        var formData = new FormData(contactForm);
+        let name = formData.get("name");
+        let issueSentence = formData.get("issue"); //each issue value is a full sentence.
+
+        alert("Your support ticket has been recieved, " + name + "! " + issueSentence);
     });
 });

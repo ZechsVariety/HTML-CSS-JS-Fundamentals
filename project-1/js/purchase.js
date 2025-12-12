@@ -10,11 +10,17 @@ document.addEventListener("DOMContentLoaded", function(){ //waits until the page
         //const reviewFormName = reviewForm.getElementsById("name");
         var formData = new FormData(reviewForm);
         let name = formData.get("name");
+        let rating = formData.get("star"); //string values are just "one"-"five"
 
-        alert("Thank you for your review, " + name + "!");
+        alert("Thank you for your " + rating + " star review, " + name + "!");
     });
 
     purchaseForm.addEventListener("submit", function(event){
-        alert("Thank you for your purchase! The Theory of Gravity will arrive shortly!");
+        //get relevant form variables
+        var formData = new FormData(purchaseForm);
+        let name = formData.get("fname");
+        let shipping = formData.get("shipping"); //these string values are either "your (something)" or "I"
+
+        alert("Thank you for your purchase, " + name + "! Don't fret, " + shipping + " will arrive shortly!");
     });
 });

@@ -49,8 +49,8 @@
 							<legend>Submit a Support Ticket</legend>
 							
 							<div>
-								<label for="name">Name</label>
-								<input type="text" id="name" />
+								<label for="name">Name*</label>
+								<input type="text" id="name" name="name" required />
 							</div>
 
 							<div>
@@ -60,25 +60,25 @@
 
 							<div>
 								<label>Issue*</label>
-								<select id="issueDropdown" required>
+								<select id="issueDropdown" name="issue" required> <!--each value is a sentence that will be printed-->
 									<option selected disabled hidden></option> <!--defaults to a blank value that is invalid. thanks to Aurelio for the solution https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element-->
 									<optgroup label="Theory of Gravity">
-										<option>Misprint issues</option>
-										<option>I have criticism</option>
-										<option>I just don't get it</option>
+										<option value="Thank you for reporting a misprint!">Misprint issues</option>
+										<option value="Good luck criticising me, bud.">I have criticism</option>
+										<option value="Don't worry; we were all dumb once!">I just don't get it</option>
 									</optgroup>
 									<optgroup label="Delivery Issues">
-										<option>My order never arrived</option>
-										<option>My order is late</option>
-										<option>My order is damaged</option>
-										<option>Pigeon ate it</option>
-										<option>They didn't let me pet the horsey</option>
+										<option value="Pigeons can be unreliable; I'll ship you a new copy, pronto!">My order never arrived</option>
+										<option value="Sorry it's late! Pigeons get distracted.">My order is late</option>
+										<option value="Those pigeons are never careful enough!">My order is damaged</option>
+										<option value="I knew I shoulda fed that pigeon some more bread...">Pigeon ate it</option>
+										<option value="Buy another copy to get another horse-petting chance!">They didn't let me pet the horsey</option>
 									</optgroup>
 									<optgroup label="Other">
-										<option>I have feedback</option>
-										<option>I have fanart</option>
-										<option>I just want to say hi</option>
-										<option>Other</option>
+										<option value="Feedback is always welcome (if it's nice)!">I have feedback</option>
+										<option value="Oooohhhhhh baby, I love me some fanart of universal gravitation and classical mechanics!">I have fanart</option>
+										<option value="Hi, I guess.">I just want to say hi</option>
+										<option value="">Other</option>
 									</optgroup>
 								</select>
 							</div>

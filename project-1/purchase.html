@@ -67,7 +67,7 @@
 						<br />- Albert Einstein
 					</h5>
 
-					<form id="reviewForm"> <!--this is a fake form with values that are never parsed, so it has no id or anything. thus, a lot of redundant stuff isnt there-->
+					<form id="reviewForm"> <!--values containing name attributes from this form (and other forms) are retrieved in this page's corresponding js file.-->
 						<fieldset>
 							<legend>Write a Review</legend>
 							
@@ -84,19 +84,19 @@
 							<div>
 								<label for="star">Rating*</label>
 
-								<input type="radio" name="star" id="1star" required />
+								<input type="radio" name="star" id="1star" value="one" required />
 								<label for="1star">★</label>
 
-								<input type="radio" name="star" id="2star" required />
+								<input type="radio" name="star" id="2star" value="two" required />
 								<label for="2star">★★</label>
 
-								<input type="radio" name="star" id="3star" required />
+								<input type="radio" name="star" id="3star" value="three" required />
 								<label for="3star">★★★</label>
 
-								<input type="radio" name="star" id="4star" required />
+								<input type="radio" name="star" id="4star" value="four" required />
 								<label for="4star">★★★★</label>
 
-								<input type="radio" name="star" id="5star" required />
+								<input type="radio" name="star" id="5star" value="five" required />
 								<label for="5star">★★★★★</label>
 							</div>
 
@@ -111,7 +111,7 @@
 				</section>
 			</main>
 
-			<form id="purchaseForm"> <!--another fake form-->
+			<form id="purchaseForm">
 				<fieldset>
 					<legend id="purchase">Purchase Form</legend>
 
@@ -119,7 +119,7 @@
 						<h4>Details</h4>
 
 						<label for="fname">First Name*</label>
-						<input type="text" id="fname" required />
+						<input type="text" id="fname" name="fname" required />
 
 						<label for="lname">Last Name*</label>
 						<input type="text" id="lname" required />
@@ -135,14 +135,20 @@
 
 						<label for="shipping">Method*</label>
 
-						<input type="radio" name="shipping" id="postal" required />
+						<input type="radio" name="shipping" id="postal" value="your package" required />
 						<label for="postal">Postal</label>
 
-						<input type="radio" name="shipping" id="horse" required />
+						<input type="radio" name="shipping" id="horse" value="your horsey" required />
 						<label for="horse">Horse Carriage</label>
 
-						<input type="radio" name="shipping" id="pigeon" required />
+						<input type="radio" name="shipping" id="pigeon" value="your pigeon" required />
 						<label for="pigeon">Mail by Pigeon</label>
+
+						<input type="radio" name="shipping" id="ship" value="your ship" required />
+						<label for="ship">Sailing Ship</label>
+
+						<input type="radio" name="shipping" id="me" value="I" required />
+						<label for="me">Me</label>
 					</div>
 				</fieldset>
 
