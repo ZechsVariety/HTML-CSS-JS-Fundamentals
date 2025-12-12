@@ -249,3 +249,7 @@ h3#sale strong {
 
     text-decoration: underline;
 }
+
+p.centered {
+    text-align: center;
+}

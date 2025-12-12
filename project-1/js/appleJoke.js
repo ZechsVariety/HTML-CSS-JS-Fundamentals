@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var impact = document.getElementById("impact");
     var apple = document.getElementById("apple");
 
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
 
     setInterval(DisplayImpact, 10); //runs the DisplayImpact() function every 10 milleseconds. thank you waelhe for the solution to looping a slice of javascript: https://stackoverflow.com/questions/26269433/check-javascript-condition-every-frame
 

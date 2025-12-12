@@ -42,14 +42,14 @@
 					</h3>
 				</section>
 
-				<img src="images/Academic-Papers3.jpg" height="788"> <!--Image source: Antarctic Galciers. I cropped the original image to fit-->
+				<img src="images/AcademicPapers3.jpg" alt="stock photo of academic papers" height="788"> <!--Image source: Antarctic Galciers. I cropped the original image to fit-->
 
 				<section>
-					<p>That's a plethora of knowledge for the price of just a couple dozen candy bars!*</p>
+					<p class="centered">That's a plethora of knowledge for the price of just a couple dozen candy bars!*</p>
 
 					<h1><a href="purchase.html#purchase">BUY NOW</a></h1> <!--teleports you to the purchase form below-->
 
-					<p><small>*I forgot to adjust for inflation. Seriously, what happened guys?</small></p>
+					<p class="centered"><small>*I forgot to adjust for inflation. Seriously, what happened guys?</small></p>
 				</section>
 
 				<section>
@@ -78,11 +78,11 @@
 
 							<div>
 								<label for="review">Your Review</label>
-								<textarea type="text" id="review" cols="50"></textarea>
+								<textarea id="review" cols="50"></textarea>
 							</div>
 
 							<div>
-								<label for="star">Rating*</label>
+								<label>Rating*</label>
 
 								<input type="radio" name="star" id="1star" value="one" required />
 								<label for="1star">★</label>
@@ -129,11 +129,11 @@
 						<h4>Shipping</h4>
 
 						<div>
-							<label for="address">Shipping Address*</label>
-							<input type="address" id="address" required />
+							<label for="shippingAddress">Shipping Address</label>
+							<input type="address" id="shippingAddress" /> <!--I would make this required but for some reason address type fields have no support for the required attribute--> <!--also, im genuinely unsure why this still produces an error in validator w3-->
 						</div>
 
-						<label for="shipping">Method*</label>
+						<label>Method*</label>
 
 						<input type="radio" name="shipping" id="postal" value="your package" required />
 						<label for="postal">Postal</label>

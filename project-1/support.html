@@ -61,7 +61,7 @@
 							<div>
 								<label>Issue*</label>
 								<select id="issueDropdown" name="issue" required> <!--each value is a sentence that will be printed-->
-									<option selected disabled hidden></option> <!--defaults to a blank value that is invalid. thanks to Aurelio for the solution https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element-->
+									<option label="select" selected disabled hidden></option> <!--defaults to a blank value that is invalid. thanks to Aurelio for the solution https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element-->
 									<optgroup label="Theory of Gravity">
 										<option value="Thank you for reporting a misprint!">Misprint issues</option>
 										<option value="Good luck criticising me, bud.">I have criticism</option>
@@ -85,7 +85,7 @@
 
 							<div>
 								<label for="issue">Describe your Issue*</label>
-								<textarea type="text" id="issue" required cols="40"></textarea>
+								<textarea id="issue" required cols="40"></textarea>
 							</div>
 						</fieldset>
 
