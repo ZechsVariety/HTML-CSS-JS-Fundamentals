@@ -22,7 +22,7 @@ html {
 
 /* STEP 4c: Set the root element (HTML) to 10px, then set the H1 and the H2 elements using rem - this is a common practice for controlling font sizing across a page */
 html {
-
+	font-size: 10px;
 }
 
 /* STEP 8: Apply font-variant to h1 or h2 (small-caps) */

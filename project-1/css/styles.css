@@ -9,14 +9,18 @@ html {
     /* overflow-x: hidden; */
 }
 
-*, *::before, *::after {
+/*everything*/
+*{
 	box-sizing: inherit; /*everything inherits border box box sizing (ie: 50% will be 50% of the box rather than the content*/
 }
 
 body {
     font-family: 'Courier New', Courier, monospace; /*i wanted it to look like it was typed on a typewriter*/
     background-image: url("../images/PaperTexture.jpg");
+
+    /*center page when zoomed out*/
     text-align: center;
+    margin: auto;
 
     /*ensures the website looks the same regardless of the zoom. this is my screen's viewport width (1521 px)*/
     max-width: 1513px; /*trial and error to make the horizontal scrollbar go away*/
@@ -35,9 +39,11 @@ header {
     background-image: linear-gradient();
 
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 
     padding: 1em;
+
+    border-radius: 10px; /*rounds corners*/
 }
 
 ul {
@@ -50,9 +56,13 @@ main {
     flex-direction: row;
 
     background-color: rgb(255, 255, 255);
+    padding: 10px; /*effecitvely adds a white border*/
 
     width: 90%;
     margin: 0 auto;
+
+    border-radius: 10px; /*rounds corners*/
+    border-style: solid;
 }
 
 section {
@@ -62,6 +72,8 @@ section {
     padding: 2.5%; /*space between the columns*/
 
     background-color: rgb(198, 228, 255);
+
+    /*border-radius: 10px;*/ /*rounds corners*/
 }
 
 article {
@@ -110,6 +122,8 @@ form {
     padding: 2.5%;
 
     background-color: aliceblue;
+    border-radius: 10px; /*rounds corners*/
+    border-style: solid;
 
     text-align: left;
 }
@@ -117,7 +131,9 @@ form#reviewForm {
     width: 105%
 }
 form#purchaseForm {
-    width: 50%
+    width: 50%;
+
+    margin: 10px auto;
 }
 form#contactForm {
     width: 105%;
@@ -146,6 +162,8 @@ nav > ul {
 nav > ul > li {
     padding: 2em;
     background-color: rgba(0, 47, 88, 0.426);
+
+    /*border-radius: 10px;*/ /*rounds corners*/
 }
 nav > ul > li > a {
     background-color: rgb(171, 220, 255);;
@@ -153,11 +171,14 @@ nav > ul > li > a {
     
     padding: 1em;
     text-decoration: none;
+
+    border-radius: 10px; /*rounds corners*/
+    border-style: solid;
 }
 nav > ul > li > a:hover {
     text-decoration: underline;
 }
-nav > ul > li > a#current { /*the current tab for each page is set manually so i dont have to use js*/
+nav > ul > li > a.current { /*the current tab for each page is set manually so i dont have to use js*/
     background-color: rgb(0, 67, 126);
     color: white;
 }
@@ -174,4 +195,50 @@ header > h1 {
 header > h1#large { /*for the home page, i wanted the banner to show more of newton's headshot*/
     background-image: url("../images/NewtonBanner.png"); /*image source: World History Encyclopedia. also cropped by me*/
     padding: 2.3em;
+}
+
+/*turn h1 links into buttons*/
+h1 a {
+    background-color: rgb(171, 220, 255);;
+    color: black;
+    
+    padding: .3em;
+    text-decoration: none;
+
+    border-style: ridge;
+    border-color: white;
+
+    font-size: 70%;
+}
+h1 a:hover {
+    text-decoration: underline;
+}
+
+/*make sale prices look nice*/
+h3#sale em {
+    color:red;
+    font-size: 300%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black;
+
+    background-color: rgb(255, 255, 162);
+    border-style: dotted;
+    border-radius: 10px;
+
+    display:inline-block; /*turns it into a box awesome*/
+    padding: 10px;
+    margin: 10px auto 10px auto; /*top and bottom 10px*/
+}
+h3#sale del {
+    color: rgb(157, 157, 157);
+    font-size: 150%;
+    font-style: italic;
+}
+h3#sale strong {
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px red;
+
+    text-decoration: underline;
 }
