@@ -5,11 +5,16 @@ document.addEventListener("DOMContentLoaded", function(){ //waits until the page
 
     //alerts for when you click submit
 
-    reviewForm.addEventListener("submit", function(event){
-            alert("Thank you for your review!");
+    reviewForm.addEventListener("submit", function(event){ //thank you https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+        //get relevant form variables //THANK YOU AGAIN MDN https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_forms_through_JavaScript
+        //const reviewFormName = reviewForm.getElementsById("name");
+        var formData = new FormData(reviewForm);
+        let name = formData.get("name");
+
+        alert("Thank you for your review, " + name + "!");
     });
 
     purchaseForm.addEventListener("submit", function(event){
-            alert("Thank you for your purchase! The Theory of Gravity will arrive shortly!");
+        alert("Thank you for your purchase! The Theory of Gravity will arrive shortly!");
     });
 });
