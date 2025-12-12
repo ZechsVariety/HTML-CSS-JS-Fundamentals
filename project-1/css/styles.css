@@ -109,8 +109,15 @@ img#newton {
     position: absolute;
 
     /*position him at the bottom*/
-    margin-top: 71.5em;
-    margin-left: 2.5em;
+    margin-top: 75.5em;
+    margin-left: 5.5em;
+}
+img#impact {
+    position: absolute;
+
+    /*its default position is on his head*/
+    margin-top: 70em;
+    margin-left: 5.25em;
 }
 
 form {
